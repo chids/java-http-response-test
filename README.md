@@ -38,6 +38,6 @@ Start doing requests against nginx:
 
 
 ### 4. Experiment
-    * bring up a JMX console against the jetty instances and play around with various combinations of response codes until you find something that works in this dust
-    * mark one or more of the upstream servers as "backup" in nginx.conf, reload the configuration and play with the response codes
-    * experiment with various combinations of values for the `proxy_next_upstream` field
+* bring up a JMX console against the jetty instances and play around with various combinations of response codes until you find something that works in this dust
+* mark one or more of the upstream servers as "backup" in nginx.conf, reload the configuration and play with the response codes
+* experiment with various combinations of values for the `proxy_next_upstream` field
