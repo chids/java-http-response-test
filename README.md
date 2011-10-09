@@ -1,3 +1,10 @@
+# Huh?
+
+A simple servlet that can be used to play around with load balancer probes, proxy configurations, server pools etc.
+Launch a few instances, configure your load balancer / proxy / whatever and start hammering while changing the response
+on the instances.
+
+
 ## nginx upstream example
 
 ### 1. Jetty
@@ -39,5 +46,5 @@ Start doing requests against nginx:
 
 ### 4. Experiment
 * bring up a JMX console against the jetty instances and play around with various combinations of response codes until you find something that works in this dust
-* mark one or more of the upstream servers as "backup" in nginx.conf, reload the configuration and play with the response codes
+* mark one or more of the upstream servers as "backup" in `nginx.conf`, reload the configuration mid-flight (`nginx -s reload`) and play with the response codes
 * experiment with various combinations of values for the `proxy_next_upstream` field
